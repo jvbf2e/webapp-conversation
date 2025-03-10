@@ -1,9 +1,10 @@
 .boxShodow {
-  box-shadow: 0px 12px 16px -4px rgba(16, 24, 40, 0.08), 0px 4px 6px -2px rgba(16, 24, 40, 0.03);
+  box-shadow: 0px 12px 16px -4px rgba(16, 24, 40, 0.08),
+    0px 4px 6px -2px rgba(16, 24, 40, 0.03);
 }
 
 .bgGrayColor {
-  background-color: #F9FAFB;
+  background-color: #f9fafb;
 }
 
 .headerBg {
@@ -26,4 +27,21 @@
   height: 20px;
   background: url(./icons/logo.png) center center no-repeat;
   background-size: contain;
+}
+
+.sendBtn {
+  background: url(./icons/send.svg) center center no-repeat;
+}
+
+.sendBtn:hover {
+  background-image: url(./icons/send-active.svg);
+  background-color: #ebf5ff;
+}
+
+.textArea:focus + div .count {
+  display: block;
+}
+
+.textArea:focus + div .sendBtn {
+  background-image: url(./icons/send-active.svg);
 }
